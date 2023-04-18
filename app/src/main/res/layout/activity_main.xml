@@ -1,0 +1,189 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffffff"
+        android:orientation="vertical">
+
+        <com.xy.myapplication.RotatView
+            android:id="@+id/myRotatView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dip" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/tv_one"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/anda_icon_end"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_three"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/anda_icon_end"
+                android:gravity="center"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@id/tv_one"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_five"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/anda_icon_end"
+                android:gravity="center"
+                android:text="5"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toEndOf="@id/tv_three"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:id="@+id/line1"
+                android:layout_width="5dp"
+                android:layout_height="70dp"
+                android:background="@color/purple_500"
+                app:layout_constraintEnd_toEndOf="@id/tv_one"
+                app:layout_constraintStart_toStartOf="@id/tv_one"
+                app:layout_constraintTop_toBottomOf="@id/tv_one" />
+
+            <TextView
+                android:id="@+id/tv_two"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/anda_icon_end"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/line1"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/tv_four"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/anda_icon_end"
+                android:gravity="center"
+                android:text="4"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+
+                app:layout_constraintStart_toStartOf="@id/tv_three"
+                app:layout_constraintTop_toTopOf="@id/tv_two"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/anda_icon_end"
+                android:gravity="center"
+                android:text="R"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintStart_toStartOf="@id/tv_five"
+                app:layout_constraintTop_toTopOf="@id/tv_two"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:id="@+id/line2"
+                android:layout_width="5dp"
+                android:layout_height="0dp"
+                android:background="@color/purple_500"
+                app:layout_constraintBottom_toTopOf="@id/tv_four"
+                app:layout_constraintEnd_toEndOf="@id/tv_three"
+                app:layout_constraintStart_toStartOf="@id/tv_three"
+                app:layout_constraintTop_toBottomOf="@id/tv_one" />
+
+            <View
+                android:id="@+id/line3"
+                android:layout_width="5dp"
+                android:layout_height="70dp"
+                android:background="@color/purple_500"
+                app:layout_constraintEnd_toEndOf="@id/tv_five"
+                app:layout_constraintStart_toStartOf="@id/tv_five"
+                app:layout_constraintTop_toBottomOf="@id/tv_one" />
+
+
+            <View
+                android:id="@+id/line4"
+                android:layout_width="0dp"
+                android:layout_height="5dp"
+                android:background="@color/purple_500"
+                app:layout_constraintBottom_toBottomOf="@id/tv_two"
+                app:layout_constraintEnd_toEndOf="@id/line3"
+                app:layout_constraintStart_toStartOf="@id/line1"
+                app:layout_constraintTop_toTopOf="@id/tv_one"
+
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/anda_icon_end"
+                android:gravity="center"
+                android:text="空"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintBottom_toBottomOf="@id/tv_two"
+                app:layout_constraintEnd_toEndOf="@id/line3"
+                app:layout_constraintStart_toStartOf="@id/line1"
+                app:layout_constraintTop_toTopOf="@id/tv_one"
+                tools:ignore="HardcodedText" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.xy.myapplication.DashboardView
+            android:id="@+id/dashboard_view_3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:bgColor="@color/black"
+            app:bigSliceCount="8"
+            app:headerRadius="30dp"
+            app:headerTextSize="6sp"
+            app:headerTitle="1000/xpr"
+            app:maxValue="8"
+            app:measureTextSize="6sp"
+            app:radius="60dp"
+            app:realTimeValue="8"
+            app:sliceCountInOneBigSlice="5"
+            app:startAngle="150"
+            app:stripeMode="outer"
+            app:stripeWidth="40dp"
+            app:sweepAngle="240"
+            app:textColor="@color/white" />
+
+        <com.xy.myapplication.DashboardView
+            android:id="@+id/dashboard_view_4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</ScrollView>
