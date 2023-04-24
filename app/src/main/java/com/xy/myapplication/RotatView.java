@@ -564,7 +564,7 @@ public class RotatView extends View {
     protected void onDetachedFromWindow() {
         super.onDetachedFromWindow();
         if (rotatBitmap != null) {
-            rotatBitmap.recycle();
+//            rotatBitmap.recycle();
             rotatBitmap = null;
         }
     }
